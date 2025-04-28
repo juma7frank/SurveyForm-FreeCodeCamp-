@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+    <link rel="stylesheet" href="styles1.css">
+    <!-- <link rel="icon" href="path/to/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <h1 id="title">Students Registration Form</h1>
+    <p id="description">This is a registration form for web-dev students</p>
+    <div class="container">
+        <form action="survey-form" class="form">
+            <label for="name" class="name">Name:</label>
+            <input type="text" id="name" placeholder="Full Name"><br>
+            <label for="email" class="email">Email:</label>
+            <input type="email" id="email" placeholder="example@gmail.com"><br>
+            <label for="age" class="span">For how long do you plan to stay with us?</label><br>
+            <input type="number" id="number" min="4" max="8" placeholder="e.g 2"><br>
+            <label for="field" class="field">Which field are you interested with?</label><br>
+            <select name="option" id="dropdown">
+                <option value="">Frontend</option>
+                <option value="">Backend</option>
+            </select><br>
+            <label for="school_level" class="school_level">Are you a graduate or an undergraduate?</label><br>
+            <input type="radio" name="school-level" value="graduate">
+            <span class="school_level">Graduate</span><br>
+            <input type="radio" name="school-level" value="undergraduate">
+            <span class="school_level">Undergraduate</span><br>
+            <p class="program">Choose the programming language you want to learn</p> <br>
+            <input type="checkbox" name="" id="php" value="">
+            <span class="program">Hypertext Preprocessor (php)</span><br>
+            <input type="checkbox" name="" id="python" value="">
+            <span class="program">Python</span><br>
+            <input type="checkbox" name="" id="css" value="">
+            <span class="program">Cascading Stlye Sheet (CSS)</span><br>
+            <input type="checkbox" name="" id="sass" value=""><span class="program">Synctactically Awesome Style Sheet
+                (SASS)</span><br>
+            <textarea name="comments" id="comments"></textarea><br>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
